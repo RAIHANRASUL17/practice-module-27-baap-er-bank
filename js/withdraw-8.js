@@ -11,5 +11,11 @@ withdrawField.value= '';
 const currentWithdrawTotal= newWithdrawAmount + previousWithdrawAmount;
 withdrawElement.innerText= currentWithdrawTotal;
 
-
+/*witdraw With Balance Section*/
+const balanceTotalElement= document.getElementById('balance-total');
+const previouBalanceTotal= parseFloat(balanceTotalElement.innerText);
+// calculation previousBalanceTotal - newWithdrawAmount then set up
+const currentBalanceTotal= previouBalanceTotal - newWithdrawAmount;
+// set up
+balanceTotalElement.innerText= currentBalanceTotal;
 })
