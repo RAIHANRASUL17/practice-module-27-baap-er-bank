@@ -13,4 +13,12 @@ depositTotalElement.innerText = currentDepositTotal;
 // clear depositField
 depositField.value= '';
 
+/*Deposit With Balance Section*/
+const balanceTotalElement= document.getElementById('balance-total');
+const previouBalanceTotal= parseFloat(balanceTotalElement.innerText);
+// calculate newDeposit + previousBalanceTotal then set up
+const currentBalanceTotal= previouBalanceTotal + newDepositAmount;
+// set
+balanceTotalElement.innerText= currentBalanceTotal;
+
 });
